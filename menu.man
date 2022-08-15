@@ -1,0 +1,22 @@
+.TH MENU 1
+.SH NAME
+menu \- filter through a menu
+.SH SYNOPSIS
+.B menu
+.SH DESCRIPTION
+.I menu
+displays a menu created from the standard input.
+Any item selected or clicked will be sent to the standard output.
+.PP
+.I Menu
+reacts to mouse clicks by writing the "clicked" portion of the text
+to standard output. This can be used to filter items in a pipeline. See
+.I Examples
+section.
+.EX
+ls | menu | plumb
+.EE
+.SH SOURCE
+https://github.com/halfwit/9menu
+.SH BUGS
+So many...
